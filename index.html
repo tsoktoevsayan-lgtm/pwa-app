@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA Test App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем манифест PWA -->
+    <link rel="manifest" href="manifest.json"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Тестовое PWA</h1>
+        <p>Если вы видите это сообщение без подключения к интернету, значит Service Worker работает!</p>
+        <p id="status">Статус подключения: Онлайн</p>
+    </div>
+
+    <!-- Подключаем основной скрипт и регистрируем SW -->
+    <script src="app.js"></script>
+</body>
+</html>
